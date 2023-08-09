@@ -1,0 +1,14 @@
+<p>
+  <label><input type="checkbox" [(ngModel)]="option1">Option 1</label>
+  <code>{{log(option1)}}</code>
+</p>
+
+<p>
+  <label><input [type]="'checkbox'" [(ngModel)]="option2">Option 2</label>
+  <code>{{log(option2)}}</code>
+</p>
+
+<p>
+  <label><input [type]="'checkbox'" [ngModel]="option3" [checked]="option3" (change)="option3 = $event.target.checked">Option 3</label>
+  <code>{{log(option3)}}</code>
+</p>
